@@ -1,0 +1,18 @@
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <div class="col-md-8">
+      <div *ngIf="questions">
+        <div class="card mb-3" *ngFor="let question of questions.data">
+          <div class="card-header">
+              by <span class="text-success"> {{ question.user }} </span> on <span class="text-success">{{ question.created_at}}</span>
+          </div>
+          <div class="card-body">
+            <h2>{{ question.title }}</h2>
+            <p>{{ question.body}}</p>
+            <a class="btn btn-primary" [routerLink]="['/show',question.path]">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
