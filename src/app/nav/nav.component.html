@@ -9,20 +9,14 @@
         <a class="nav-link" [routerLink]="['']"  >Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['create']" >Create</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        <a class="nav-link" [routerLink]="['create']" >Ask Question</a>
       </li>
     </ul>
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
+      <li class="nav-item active" *ngIf="login">
         <a class="nav-link" [routerLink]="['login']" >Login </a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" *ngIf="login">
         <a class="nav-link" [routerLink]="['/signup']" routerLinkActive="router-link-active" >Signup</a>
       </li>
     </ul>
