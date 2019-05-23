@@ -18,12 +18,12 @@ export class NavComponent implements OnInit {
 
   LoginStatus(){
     const access_token = localStorage.getItem('access_token');
-    if(access_token){
-      this.login = false;
-    }else{
-      this.login = true;
-      this.router.navigate(['login']);
-    }
+    // if(access_token){
+    //   this.login = false;
+    // }else{
+    //   this.login = true;
+    //   this.router.navigate(['login']);
+    // }
   }
 
 }

@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
     .subscribe(
       (response: Response) => {
         this.questions = response;
-        console.log(response);
+        // console.log(response);
       },
       (error) => console.log(error)
     );

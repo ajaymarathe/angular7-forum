@@ -41,7 +41,7 @@ export class CreateQuestionComponent implements OnInit {
       (response: Response) => {
         this.responseData = response;
         this.categories = Object.keys(this.responseData.data).map((keys) => this.responseData.data[keys]);
-        console.log(response);
+        // console.log(response);
       }
     );
   }

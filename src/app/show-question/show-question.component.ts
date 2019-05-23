@@ -23,7 +23,7 @@ export class ShowQuestionComponent implements OnInit {
     .subscribe(
       (response: Response) => {
         this.singleQuestion =  Object.keys(response).map((keys) => response[keys])
-        console.log(response);
+        // console.log("this is response ",response);
       },
       (error) => console.log(error)
     );

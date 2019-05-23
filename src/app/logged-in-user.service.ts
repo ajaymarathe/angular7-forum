@@ -9,7 +9,7 @@ export class LoggedInUserService {
 
   constructor(private http: HttpClient) { }
 
-  Me(){
-    
-  }
+  // Me(){
+  //   return this.http.get('');
+  // }
 }

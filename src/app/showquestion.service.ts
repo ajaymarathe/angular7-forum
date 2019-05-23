@@ -9,6 +9,7 @@ export class ShowquestionService {
   constructor(private http: HttpClient) { }
 
   SingleQuestion(slug){
-    return this.http.get('http://localhost:8000/api/'+slug);
+    // console.log(slug);
+    return this.http.get(slug);
   }
 }
